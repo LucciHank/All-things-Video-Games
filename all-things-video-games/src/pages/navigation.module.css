@@ -1,0 +1,138 @@
+/* Basic, theme-aware navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid var(--ifm-toc-border-color, rgba(0,0,0,0.08));
+}
+
+.navInner {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brandLink {
+  font-weight: 700;
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.dropdownContainer {
+  position: relative;
+}
+
+.navMenuButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.6rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ifm-navbar-link-color);
+  cursor: pointer;
+}
+
+.navMenuButton:hover,
+.navMenuButton:focus {
+  background: var(--ifm-hover-overlay);
+  outline: none;
+}
+
+.caret {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  min-width: 12rem;
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  z-index: 1001;
+}
+
+.dropdownLink {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0;
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.dropdownLink:hover,
+.dropdownLink:focus {
+  background: var(--ifm-hover-overlay);
+  outline: none;
+}
+
+@media (max-width: 996px) {
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0.25rem 0;
+    margin-top: 0.25rem;
+  }
+}
+
+.navLink {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.375rem;
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background: var(--ifm-hover-overlay);
+  outline: none;
+}
+
+.content {
+  max-width: var(--ifm-container-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.title {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--ifm-color-secondary);
+}
+
+@media (max-width: 996px) {
+  .navInner {
+    flex-wrap: wrap;
+  }
+  .navList {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
