@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'All things Video Games',
+  title: 'All Things Video Games',
   tagline: 'An online encyclopedia of video games',
   favicon: 'img/favicon.ico',
 
