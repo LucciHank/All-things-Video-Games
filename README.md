@@ -1,11 +1,42 @@
-# All-things-Video-Games
+# All Things Video Games
 
-## HOW TO START YOUR docusaurus SITE!
+A collaborative documentation site for everything video game related, built with Docusaurus.
 
-1. Make sure you have Node.js version 20.0 or above 
+## Quick Start
 
-2. Run npm init docusaurus@latest <your-site-name> classic
+### Prerequisites
+- [Node.js](https://nodejs.org/) version 20.0 or higher
+- npm or yarn package manager
 
-3. cd <your-site-name>
+### Getting Started
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+   ```
 
-4. Run npm run start
+2. **Navigate to the site directory**
+   ```bash
+   cd all-things-video-games
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run start
+   ```
+
+The site will open at `http://localhost:3000` and automatically reload when you make changes.
+
+## Available Commands
+
+- `npm run start` - Start development server
+- `npm run build` - Build for production
+- `npm run serve` - Serve production build locally
+- `npm run clear` - Clear cache
+
+For more details, visit the [Docusaurus documentation](https://docusaurus.io/docs).
