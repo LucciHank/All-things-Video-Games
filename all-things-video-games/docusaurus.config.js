@@ -89,13 +89,22 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {to: '/', label: 'Home', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
+            label: 'Video Games',
             position: 'left',
-            label: 'Tutorial',
+            items: [
+              {to: '/docs/action-games', label: 'Action'},
+              {to: '/docs/adventure-games', label: 'Adventure'},
+              {to: '/docs/rpg-games', label: 'RPG'},
+              {to: '/docs/strategy-games', label: 'Strategy'},
+              {to: '/docs/sports-games', label: 'Sports'},
+            ],
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/reviews', label: 'Reviews', position: 'left'},
+          {to: '/about', label: 'About Us', position: 'left'},
+          {to: '/contact', label: 'Contact Us', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
