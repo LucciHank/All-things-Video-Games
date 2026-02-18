@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'All Things Video Games',
   tagline: 'An online encyclopedia of video games',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/gaminglogo.webp',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -78,7 +78,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/gaminglogo.webp',
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -86,7 +86,7 @@ const config = {
         title: 'All things Video Games',
         logo: {
           alt: 'All things Video Games Logo',
-          src: 'img/logo.svg',
+          src: 'img/gaminglogo.webp',
         },
         items: [
           {to: '/', label: 'Home', position: 'left'},
