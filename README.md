@@ -1,6 +1,6 @@
 # All Things Video Games
 
-A collaborative documentation site for everything video game related, built with Docusaurus.
+A collaborative documentation site for everything video game related.
 
 ## Quick Start
 
