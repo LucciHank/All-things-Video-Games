@@ -117,12 +117,7 @@ const config = {
         links: [
           {
             title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            items: [],
           },
           {
             title: 'Community',
@@ -151,6 +146,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games',
+              },
+              {
+                label: 'Docusaurus Tutorial - 5min ⏱️',
+                to: '/docs/intro',
               },
             ],
           },
