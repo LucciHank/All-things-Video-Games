@@ -73,7 +73,7 @@ export default function Navigation() {
                       {c.label}</Link></li>))}
                       </ul>
                       </li>
-            <li><Link className={styles.navLink} to="">Reviews</Link></li>
+            <li><Link className={styles.navLink} to="/docs/reviews">Reviews</Link></li>
             <li><Link className={styles.navLink} to="">About Us</Link></li>
             <li><Link className={styles.navLink} to="">Contact Us</Link></li>
           </ul>
