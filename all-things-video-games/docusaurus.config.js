@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'All Things Video Games',
+  tagline: 'An online encyclopedia of video games',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -50,9 +50,24 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games/tree/main/all-things-video-games',
         },
 
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games/tree/main/all-things-video-games',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -69,20 +84,30 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'All things Video Games',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'All things Video Games Logo',
           src: 'img/logo.svg',
         },
         items: [
+          {to: '/', label: 'Home', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
+            label: 'Video Games',
             position: 'left',
-            label: 'Tutorial',
+            items: [
+              {to: '/docs/action-games', label: 'Action'},
+              {to: '/docs/adventure-games', label: 'Adventure'},
+              {to: '/docs/rpg-games', label: 'RPG'},
+              {to: '/docs/strategy-games', label: 'Strategy'},
+              {to: '/docs/sports-games', label: 'Sports'},
+            ],
           },
+          {to: '/docs/reviews', label: 'Reviews', position: 'left'},
+          {to: '/about', label: 'About Us', position: 'left'},
+          {to: '/contact', label: 'Contact Us', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games',
             label: 'GitHub',
             position: 'right',
           },
@@ -122,12 +147,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} All things Video Games. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
