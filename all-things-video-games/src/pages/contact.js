@@ -1,8 +1,13 @@
+
 import React from 'react';
+import Link from '@docusaurus/Link';
 
 export default function Contact() {
   return (
     <main style={{ padding: '2rem' }}>
+      <div style={{ marginBottom: '1rem' }}>
+        <Link to="/">&larr; Back to Home</Link>
+      </div>
       <h1>Contact Us</h1>
       <p>If you have any questions, feedback, or suggestions, please reach out to us!</p>
       <form style={{ maxWidth: 400 }}>
