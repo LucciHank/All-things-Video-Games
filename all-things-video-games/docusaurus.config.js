@@ -52,6 +52,7 @@ const config = {
           editUrl:
             'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games/tree/main/all-things-video-games',
         },
+
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -139,10 +140,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games',
