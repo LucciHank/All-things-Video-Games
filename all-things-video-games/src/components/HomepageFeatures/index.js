@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'About Us',
+    Svg: require('@site/static/img/game-console-gamer.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        All Things Video Games is a collaboration-driven documentation site
+        for all things video game related.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Our Goal',
+    Svg: require('@site/static/img/video-game.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We strive to provide video game information to users in a seamless
+        and user-friendly fashion, from game recommendations to game rulings.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Where to Contribute',
+    Svg: require('@site/static/img/joystick-game-controller.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        All Things Video Games is a teamwork-based project where contributions
+        are welcome by anyone. To get started contributing, head over to our <a href="https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games" target="_blank">GitHub</a>.
       </>
     ),
   },
@@ -41,7 +41,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--md padding-top--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
