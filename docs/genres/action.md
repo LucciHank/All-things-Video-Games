@@ -2,11 +2,10 @@
 title: Action
 ---
 
-# Action
+## Action
 
 Fast-paced games that focus on reflexes, combat, and moment-to-moment gameplay.
 
-## Starter Collection
 - **DOOM Eternal** — PC / PS4 / PS5 / Xbox One / Series — 2020  
   High-speed shooter with aggressive “push forward” combat.
 - **Devil May Cry 5** — PC / PS4 / Xbox One — 2019  

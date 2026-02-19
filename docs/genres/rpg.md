@@ -2,11 +2,10 @@
 title: RPG
 ---
 
-# RPG
+## RPG
 
 Games built around character progression, stats/builds, party choices, and long-form adventures.
 
-## Starter Collection
 - **Baldur’s Gate 3** — PC / PS5 / Xbox Series — 2023  
   Party-based RPG with deep choices and reactive storytelling.
 - **The Witcher 3: Wild Hunt** — PC / PS4 / PS5 / Xbox One / Series / Switch — 2015  

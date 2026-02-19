@@ -2,11 +2,10 @@
 title: Adventure
 ---
 
-# Adventure
+## Adventure
 
 Exploration-focused games with story, discovery, puzzles, or narrative progression.
 
-## Starter Collection
 - **The Legend of Zelda: Breath of the Wild** — Switch / Wii U — 2017  
   Open exploration and player-driven problem solving.
 - **Outer Wilds** — PC / PS4 / Xbox One / Switch — 2019  
