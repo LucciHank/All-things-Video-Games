@@ -52,6 +52,7 @@ const config = {
           editUrl:
             'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games/tree/main/all-things-video-games',
         },
+
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -95,11 +96,11 @@ const config = {
             label: 'Video Games',
             position: 'left',
             items: [
-              {to: '/docs/action-games', label: 'Action'},
-              {to: '/docs/adventure-games', label: 'Adventure'},
-              {to: '/docs/rpg-games', label: 'RPG'},
-              {to: '/docs/strategy-games', label: 'Strategy'},
-              {to: '/docs/sports-games', label: 'Sports'},
+              {to: '/docs/genres/action', label: 'Action'},
+              {to: '/docs/genres/adventure', label: 'Adventure'},
+              {to: '/docs/genres/rpg', label: 'RPG'},
+              {to: '/docs/genres/strategy', label: 'Strategy'},
+              {to: '/docs/genres/sports', label: 'Sports'},
             ],
           },
           {to: '/docs/reviews', label: 'Reviews', position: 'left'},
@@ -117,12 +118,7 @@ const config = {
         links: [
           {
             title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            items: [],
           },
           {
             title: 'Community',
@@ -145,12 +141,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/NSCC-ITC-Winter2026-WEBD3030-700-MCa/All-things-Video-Games',
+              },
+              {
+                label: 'Docusaurus Tutorial - 5min ⏱️',
+                to: '/docs/intro',
               },
             ],
           },
