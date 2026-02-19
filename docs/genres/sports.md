@@ -2,11 +2,10 @@
 title: Sports
 ---
 
-# Sports
+## Sports
 
 Games based on real-world sports or sports-style competition, from simulation to arcade.
 
-## Starter Collection
 - **EA Sports FC 24** — PC / PS4 / PS5 / Xbox One / Series / Switch — 2023  
   Modern football/soccer sim (formerly FIFA branding).
 - **NBA 2K24** — PC / PS4 / PS5 / Xbox One / Series / Switch — 2023  

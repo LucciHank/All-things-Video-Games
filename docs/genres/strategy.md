@@ -2,11 +2,10 @@
 title: Strategy
 ---
 
-# Strategy
+## Strategy
 
 Games where planning, positioning, resource management, and long-term decisions matter.
 
-## Starter Collection
 - **Civilization VI** — PC / Switch / PS4 / Xbox One / Mobile — 2016  
   Turn-based empire building across history.
 - **XCOM 2** — PC / PS4 / Xbox One / Switch — 2016  
