@@ -22,7 +22,7 @@ A collaborative documentation site for everything video game related.
 
 3. **Install dependencies**
    ```bash
-   npm install
+   npm install or npm i
    ```
 
 4. **Start the development server**
