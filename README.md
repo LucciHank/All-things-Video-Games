@@ -15,11 +15,6 @@ A collaborative documentation site for everything video game related.
    cd <repository-name>
    ```
 
-2. **Navigate to the site directory**
-   ```bash
-   cd all-things-video-games
-   ```
-
 3. **Install dependencies**
    ```bash
    npm install or npm i
