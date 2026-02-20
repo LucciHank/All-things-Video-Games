@@ -9,11 +9,11 @@ export default function Navigation() {
   const navButtonRef = useRef(null);
 
   const categories = [
-    { label: "Action", to: "" },
-    { label: "Adventure", to: "" },
-    { label: "R.P.G", to: "" },
-    { label: "Strategy", to: "" },
-    { label: "Sports", to: "" }
+    { label: "Action", to: "/action-games" },
+    { label: "Adventure", to: "/adventure-games" },
+    { label: "R.P.G", to: "/rpg-games" },
+    { label: "Strategy", to: "/strategy-games" },
+    { label: "Sports", to: "/sports-games" }
   ]
 
   useEffect(() => {
