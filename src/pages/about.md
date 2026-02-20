@@ -3,7 +3,8 @@ title: About Us
 description: Learn more about All Things Video Games.
 ---
 
-## About Us
+# [← Back to Home](/)
+# About Us
 
 Welcome to **All Things Video Games** — your one-stop encyclopedia for exploring the world of video games.
 
