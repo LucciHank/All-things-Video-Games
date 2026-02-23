@@ -27,7 +27,15 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              style={{ width: "100%", border: "1px solid #888" }}
+              style={{ 
+                width: "100%", 
+                border: "1px solid #888",
+                padding: "12px 16px",
+                fontSize: "16px",
+                borderRadius: "4px",
+                minHeight: "48px",
+                boxSizing: "border-box"
+              }}
             />
           </div>
           <div style={{ marginBottom: "1rem" }}>
@@ -37,7 +45,15 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              style={{ width: "100%", border: "1px solid #888" }}
+              style={{ 
+                width: "100%", 
+                border: "1px solid #888",
+                padding: "12px 16px",
+                fontSize: "16px",
+                borderRadius: "4px",
+                minHeight: "48px",
+                boxSizing: "border-box"
+              }}
             />
           </div>
           <div style={{ marginBottom: "1rem" }}>
@@ -46,8 +62,17 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              rows={4}
-              style={{ width: "100%", border: "1px solid #888" }}
+              rows={6}
+              style={{ 
+                width: "100%", 
+                border: "1px solid #888",
+                padding: "12px 16px",
+                fontSize: "16px",
+                borderRadius: "4px",
+                minHeight: "120px",
+                boxSizing: "border-box",
+                resize: "vertical"
+              }}
             />
           </div>
           <button type="submit">Send</button>
