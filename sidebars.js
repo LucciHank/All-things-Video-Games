@@ -22,6 +22,7 @@ const sidebars = {
   
   tutorialSidebar: [
     'intro',
+    'gaming-setup-guide',
     {
       type: 'category',
       label: 'Home',
