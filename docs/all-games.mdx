@@ -1,22 +1,66 @@
-import Action from './genres/action.md';
-import RPG from './genres/rpg.md';
-import Strategy from './genres/strategy.md';
-import Sports from './genres/sports.md';
-import Adventure from './genres/adventure.md';
+import React, { useState } from 'react';
+
+export const games = [
+  { title: 'DOOM Eternal', platforms: 'PC / PS4 / PS5 / Xbox One / Series', year: 2020, description: 'High-speed shooter with aggressive "push forward" combat.', genre: 'Action' },
+  { title: 'Devil May Cry 5', platforms: 'PC / PS4 / Xbox One', year: 2019, description: 'Style-heavy action combat with deep combos.', genre: 'Action' },
+  { title: 'Hades', platforms: 'PC / Switch / PS4 / PS5 / Xbox One / Series', year: 2020, description: 'Roguelike action with tight controls and great pacing.', genre: 'Action' },
+  { title: 'Sekiro: Shadows Die Twice', platforms: 'PC / PS4 / Xbox One', year: 2019, description: 'Precision sword combat with a heavy parry focus.', genre: 'Action' },
+  { title: 'The Legend of Zelda: Breath of the Wild', platforms: 'Switch / Wii U', year: 2017, description: 'Open exploration and player-driven problem solving.', genre: 'Adventure' },
+  { title: 'Outer Wilds', platforms: 'PC / PS4 / Xbox One / Switch', year: 2019, description: 'Mystery exploration built around knowledge and discovery.', genre: 'Adventure' },
+  { title: "Uncharted 4: A Thief's End", platforms: 'PS4 / PS5 / PC', year: 2016, description: 'Cinematic action-adventure with set pieces and storytelling.', genre: 'Adventure' },
+  { title: 'Life is Strange', platforms: 'PC / PS4 / Xbox One / Switch', year: 2015, description: 'Choice-driven narrative adventure.', genre: 'Adventure' },
+  { title: "Baldur's Gate 3", platforms: 'PC / PS5 / Xbox Series', year: 2023, description: 'Party-based RPG with deep choices and reactive storytelling.', genre: 'RPG' },
+  { title: 'The Witcher 3: Wild Hunt', platforms: 'PC / PS4 / PS5 / Xbox One / Series / Switch', year: 2015, description: 'Story-driven open world RPG with strong quests.', genre: 'RPG' },
+  { title: 'Persona 5 Royal', platforms: 'PS4 / PS5 / Switch / PC / Xbox', year: 2019, description: 'Turn-based combat + social sim progression.', genre: 'RPG' },
+  { title: 'Elden Ring', platforms: 'PC / PS4 / PS5 / Xbox One / Series', year: 2022, description: 'Open-world action RPG with builds and tough combat.', genre: 'RPG' },
+  { title: 'EA Sports FC 24', platforms: 'PC / PS4 / PS5 / Xbox One / Series / Switch', year: 2023, description: 'Modern football/soccer sim (formerly FIFA branding).', genre: 'Sports' },
+  { title: 'NBA 2K24', platforms: 'PC / PS4 / PS5 / Xbox One / Series / Switch', year: 2023, description: 'Basketball sim with career and franchise modes.', genre: 'Sports' },
+  { title: 'Rocket League', platforms: 'PC / PS4 / PS5 / Xbox One / Series / Switch', year: 2015, description: '"Car soccer" with a competitive scene and fast matches.', genre: 'Sports' },
+  { title: "Tony Hawk's Pro Skater 1 + 2", platforms: 'PC / PS4 / PS5 / Xbox One / Series / Switch', year: 2020, description: 'Skateboarding arcade classic remade.', genre: 'Sports' },
+  { title: 'Civilization VI', platforms: 'PC / Switch / PS4 / Xbox One / Mobile', year: 2016, description: 'Turn-based empire building across history.', genre: 'Strategy' },
+  { title: 'XCOM 2', platforms: 'PC / PS4 / Xbox One / Switch', year: 2016, description: 'Tactical squad combat with base management.', genre: 'Strategy' },
+  { title: 'StarCraft II', platforms: 'PC', year: 2010, description: 'Real-time strategy with fast pacing and high skill ceiling.', genre: 'Strategy' },
+  { title: 'Into the Breach', platforms: 'PC / Switch / Mobile', year: 2018, description: 'Tight turn-based tactics with puzzle-like combat.', genre: 'Strategy' },
+];
+
+export const genres = ['All', 'Action', 'Adventure', 'RPG', 'Sports', 'Strategy'];
+
+export function GameList() {
+  const [selected, setSelected] = useState('All');
+  const filtered = selected === 'All' ? games : games.filter(g => g.genre === selected);
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+        {genres.map(genre => (
+          <button
+            key={genre}
+            onClick={() => setSelected(genre)}
+            style={{
+              padding: '0.4rem 1rem',
+              borderRadius: '4px',
+              border: '1px solid var(--ifm-color-primary)',
+              background: selected === genre ? 'var(--ifm-color-primary)' : 'transparent',
+              color: selected === genre ? '#fff' : 'var(--ifm-color-primary)',
+              cursor: 'pointer',
+              fontWeight: selected === genre ? 'bold' : 'normal',
+            }}
+          >
+            {genre}
+          </button>
+        ))}
+      </div>
+      <ul>
+        {filtered.map(game => (
+          <li key={game.title}>
+            <strong>{game.title}</strong> — {game.platforms} — {game.year}<br />
+            {game.description}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 # All Games
----
 
-<Action />
----
-
-<Adventure />
----
-
-<RPG />
----
-
-<Sports />
----
-
-<Strategy />
+<GameList />
