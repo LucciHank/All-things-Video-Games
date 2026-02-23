@@ -3,6 +3,8 @@ title: Reviews
 description: Reviews for video games
 ---
 
+[← Back to Home](/)
+
 # Reviews
 
 ## No reviews yet
