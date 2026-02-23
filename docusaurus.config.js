@@ -96,6 +96,7 @@ const config = {
             label: 'Video Games',
             position: 'left',
             items: [
+              {to: '/docs/most-popular-games', label: 'Most Popular'},
               {to: '/docs/genres/action', label: 'Action'},
               {to: '/docs/genres/adventure', label: 'Adventure'},
               {to: '/docs/genres/rpg', label: 'RPG'},
