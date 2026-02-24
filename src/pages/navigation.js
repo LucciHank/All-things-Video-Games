@@ -14,6 +14,7 @@ export default function Navigation() {
     { label: "R.P.G", to: "/docs/genres/rpg" },
     { label: "Strategy", to: "/docs/genres/strategy" },
     { label: "Sports", to: "/docs/genres/sports" },
+    { label: "Accessories", to: "/docs/genres/accessories" },
   ];
 
   useEffect(() => {

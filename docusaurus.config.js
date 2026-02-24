@@ -101,6 +101,7 @@ const config = {
               {to: '/docs/genres/rpg', label: 'RPG'},
               {to: '/docs/genres/strategy', label: 'Strategy'},
               {to: '/docs/genres/sports', label: 'Sports'},
+              {to: '/docs/genres/accessories', label: 'Accessories'},
             ],
           },
           {to: '/reviews', label: 'Reviews', position: 'left'},
