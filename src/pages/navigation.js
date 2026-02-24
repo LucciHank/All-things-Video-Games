@@ -94,6 +94,15 @@ export default function Navigation() {
               >
                 {categories.map((c) => (
                   <li key={c.label} role="none">
+<<<<<<< feat/reviews-page
+                    <Link role="menuitem" className={styles.dropdownLink} to={c.to}>
+                      {c.label}</Link></li>))}
+                      </ul>
+                      </li>
+            <li><Link className={styles.navLink} to="/docs/reviews">Reviews</Link></li>
+            <li><Link className={styles.navLink} to="">About Us</Link></li>
+            <li><Link className={styles.navLink} to="">Contact Us</Link></li>
+=======
                     <Link
                       role="menuitem"
                       className={styles.dropdownLink}
@@ -120,6 +129,7 @@ export default function Navigation() {
                 Contact Us
               </Link>
             </li>
+>>>>>>> main
           </ul>
         </div>
       </nav>
