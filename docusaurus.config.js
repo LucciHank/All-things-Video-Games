@@ -97,11 +97,13 @@ const config = {
             position: 'left',
             items: [
               {to: '/docs/content-creators', label: 'Content Creators'},
+              {to: '/docs/most-popular-games', label: 'Most Popular'},
               {to: '/docs/genres/action', label: 'Action'},
               {to: '/docs/genres/adventure', label: 'Adventure'},
               {to: '/docs/genres/rpg', label: 'RPG'},
               {to: '/docs/genres/strategy', label: 'Strategy'},
               {to: '/docs/genres/sports', label: 'Sports'},
+              {to: '/docs/genres/accessories', label: 'Accessories'},
             ],
           },
           {to: '/reviews', label: 'Reviews', position: 'left'},
