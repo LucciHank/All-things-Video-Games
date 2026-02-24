@@ -9,19 +9,22 @@ export default function Navigation() {
   const navButtonRef = useRef(null);
 
   const categories = [
-    { label: "Action", to: "/action-games" },
-    { label: "Adventure", to: "/adventure-games" },
-    { label: "R.P.G", to: "/rpg-games" },
-    { label: "Strategy", to: "/strategy-games" },
-    { label: "Sports", to: "/sports-games" }
-  ]
+    { label: "Action", to: "/docs/genres/action" },
+    { label: "Adventure", to: "/docs/genres/adventure" },
+    { label: "R.P.G", to: "/docs/genres/rpg" },
+    { label: "Strategy", to: "/docs/genres/strategy" },
+    { label: "Sports", to: "/docs/genres/sports" },
+  ];
 
   useEffect(() => {
     const onMenuClick = (e) => {
       if (!navMenuRef.current || !navButtonRef.current) {
         return;
       }
-      if (!navMenuRef.current.contains(e.target) && !navButtonRef.current.contains(e.target)) {
+      if (
+        !navMenuRef.current.contains(e.target) &&
+        !navButtonRef.current.contains(e.target)
+      ) {
         setOpen(false);
       }
     };
@@ -45,30 +48,53 @@ export default function Navigation() {
         firstLink.focus();
       }
     }
-  }, [open])
+  }, [open]);
 
   return (
     <Layout title="Navigation">
       <nav className={styles.navbar} aria-label="Site navigation">
         <div className={styles.navInner}>
           <div>
-            <Link className={styles.brandLink} to="">All Things Video Games</Link>
+            <Link className={styles.brandLink} to="/">
+              All Things Video Games
+            </Link>
           </div>
           <ul className={styles.navList}>
-            <li><Link className={styles.navLink} to="">Home</Link></li>
+            <li>
+              <Link className={styles.navLink} to="/">
+                Home
+              </Link>
+            </li>
             <li className={styles.dropdownContainer}>
-            <button className={styles.navMenuButton} id="video-games-button" onClick={() => setOpen((v) => !v)} onKeyDown={(e) => {
+              <button
+                className={styles.navMenuButton}
+                id="video-games-button"
+                onClick={() => setOpen((v) => !v)}
+                onKeyDown={(e) => {
                   if (e.key === "ArrowDown") setOpen(true);
-                  }} ref={navButtonRef} type="button" aria-haspopup="true" aria-expanded={open} aria-controls="video-games-menu">Video Games<span className={styles.caret} aria-hidden="true">▾</span></button>
-                <ul
+                }}
+                ref={navButtonRef}
+                type="button"
+                aria-haspopup="true"
+                aria-expanded={open}
+                aria-controls="video-games-menu"
+              >
+                Video Games
+                <span className={styles.caret} aria-hidden="true">
+                  ▾
+                </span>
+              </button>
+              <ul
                 id="video-games-menu"
                 ref={navMenuRef}
                 className={styles.dropdown}
                 role="menu"
                 aria-labelledby="video-games-button"
-                hidden={!open}>
+                hidden={!open}
+              >
                 {categories.map((c) => (
                   <li key={c.label} role="none">
+<<<<<<< feat/reviews-page
                     <Link role="menuitem" className={styles.dropdownLink} to={c.to}>
                       {c.label}</Link></li>))}
                       </ul>
@@ -76,6 +102,34 @@ export default function Navigation() {
             <li><Link className={styles.navLink} to="/docs/reviews">Reviews</Link></li>
             <li><Link className={styles.navLink} to="">About Us</Link></li>
             <li><Link className={styles.navLink} to="">Contact Us</Link></li>
+=======
+                    <Link
+                      role="menuitem"
+                      className={styles.dropdownLink}
+                      to={c.to}
+                    >
+                      {c.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+            <li>
+              <Link className={styles.navLink} to="/reviews">
+                Reviews
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.navLink} to="/about">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link className={styles.navLink} to="/contact">
+                Contact Us
+              </Link>
+            </li>
+>>>>>>> main
           </ul>
         </div>
       </nav>

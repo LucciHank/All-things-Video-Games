@@ -60,3 +60,19 @@ Feedback From classmates Down below:
 ----------------------------------------------------------------------------------------------------------------------------------
 
 #1 
+
+Feedback Entry
+Name:  
+Nicholas MacDonald
+
+Repo / Team:  
+All things books
+
+What You Like:  
+The different game genres
+
+What You Would Improve:  
+Nothing
+
+Instructions Easy Or Not?:  
+Yes
